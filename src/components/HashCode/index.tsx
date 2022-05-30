@@ -1,7 +1,7 @@
 import { Span } from './styles';
 
 interface IHashCode {
-  value: string;
+  value?: number;
   fontSize?: string;
 }
 
