@@ -4,11 +4,11 @@ Aplicação em React com Typescript.
 
 #### Tela Principal (Vitrine)
 
-![showcase](https://github.com/FelipePbi/twitter_hashtag_monitor_front_end/blob/master/screenshots/showcase.PNG)
+![showcase](https://github.com/FelipePbi/store/blob/master/screenshots/showcase.png)
 
 #### Carteira
 
-![wallet](https://github.com/FelipePbi/twitter_hashtag_monitor_front_end/blob/master/screenshots/wallet.PNG)
+![wallet](https://github.com/FelipePbi/store/blob/master/screenshots/wallet.png)
 
 ## Sobre este projeto
 
