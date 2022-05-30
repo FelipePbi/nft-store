@@ -1,9 +1,12 @@
 import { Link } from 'react-router-dom';
 
 import { LogoSVG, WalletSVG } from '../../assets';
+import useWallet from '../../hooks/useWallet.hook';
 import { WalletContainer, Wrapper } from './styles';
 
 export const Header: React.FC = () => {
+  const { products } = useWallet();
+
   return (
     <Wrapper>
       <Link to="/">
@@ -12,7 +15,7 @@ export const Header: React.FC = () => {
       <WalletContainer to="/wallet">
         <div>
           <strong>Minha Carteira</strong>
-          <span>3 itens</span>
+          <span>{products.length} itens</span>
         </div>
         <img src={WalletSVG} alt="Carteira" />
       </WalletContainer>
