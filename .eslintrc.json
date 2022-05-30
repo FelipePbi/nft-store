@@ -183,6 +183,8 @@
         "no-underscore-dangle": 0,
         "react/require-default-props": 0,
         "react/prop-types": 0,
+        "no-return-assign": 0,
+        "no-param-reassign": 0,
         "@typescript-eslint/no-explicit-any": 0,
         "no-shadow": "off",
         "@typescript-eslint/no-shadow": [

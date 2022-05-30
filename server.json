@@ -25,18 +25,6 @@
       }
     },
     {
-      "id": 533114,
-      "price": 3.74,
-      "image": {
-        "url": "https://www.larvalabs.com/cryptopunks/cryptopunk10000.png",
-        "previewUrl": "https://www.larvalabs.com/cryptopunks/cryptopunk10000.png",
-        "thumbnailUrl": null
-      },
-      "collection": {
-        "name": "CryptoPunks"
-      }
-    },
-    {
       "id": 401178754,
       "price": 4.31,
       "image": {
