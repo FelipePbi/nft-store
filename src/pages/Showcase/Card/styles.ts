@@ -6,6 +6,7 @@ export const Wrapper = styled.article`
   display: flex;
   flex-direction: column;
   height: 435px;
+  overflow: hidden;
   transition: transform 0.4s ease;
   width: 100%;
 
@@ -37,10 +38,11 @@ export const Button = styled.button`
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   height: 40px;
   margin: 0 15px;
+  opacity: ${({ disabled }) => (disabled ? 0.5 : 1)};
   transition: opacity 0.4s ease;
   width: calc(100% - 30px);
 
   &:hover {
-    opacity: 0.9;
+    opacity: ${({ disabled }) => (disabled ? 0.5 : 0.9)};
   }
 `;

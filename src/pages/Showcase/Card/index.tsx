@@ -3,23 +3,29 @@ import HashCode from '../../../components/HashCode';
 import Title from '../../../components/Title';
 import { Button, InfContainer, Wrapper } from './styles';
 
-export const Card: React.FC = () => {
+interface ICard {
+  image: string;
+  name: string;
+  price: number;
+  hashCode: number;
+  isSold?: boolean;
+  addProduct: () => void;
+}
+
+export const Card: React.FC<ICard> = ({ hashCode, image, name, price, isSold, addProduct }) => {
   return (
     <Wrapper>
-      <img
-        src="https://img.seadn.io/files/0701898f2a1790aae9839d5270a4440d.png?auto=format"
-        alt="Imagem NFT: Bored Ape Yacht Club"
-      />
-
+      <img src={image} alt={`Imagem NFT: ${name}`} />
       <InfContainer>
         <div>
-          <Title text="Mutant Ape Yatch Club Mutant Ape Yatch Club" />
-          <EtherPrice value={16.2} />
+          <Title text={name} />
+          <EtherPrice value={price} />
         </div>
-        <HashCode value="15206" />
+        <HashCode value={hashCode} />
       </InfContainer>
-
-      <Button>COMPRAR</Button>
+      <Button onClick={addProduct} disabled={isSold}>
+        COMPRAR
+      </Button>
     </Wrapper>
   );
 };
