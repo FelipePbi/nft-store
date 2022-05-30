@@ -4,11 +4,11 @@ Aplicação em React com Typescript.
 
 #### Tela Principal (Vitrine)
 
-![showcase](https://github.com/FelipePbi/store/blob/master/screenshots/showcase.png)
+![showcase](https://github.com/FelipePbi/nft-store/blob/master/screenshots/showcase.png)
 
 #### Carteira
 
-![wallet](https://github.com/FelipePbi/store/blob/master/screenshots/wallet.png)
+![wallet](https://github.com/FelipePbi/nft-store/blob/master/screenshots/wallet.png)
 
 ## Sobre este projeto
 
