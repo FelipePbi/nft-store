@@ -1,7 +1,9 @@
 import axios from 'axios';
 
+import { BASE_URL } from '../constants/urls';
+
 const clientHTTP = axios.create({
-  baseURL: 'http://localhost:4000',
+  baseURL: BASE_URL,
 });
 
 export const fetcher = async (url: string): Promise<any> => {

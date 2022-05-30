@@ -16,16 +16,18 @@ A ideia do aplicativo é referente a um desafio proposto a mim, com o seguinte c
 
 _"O objetivo desse desafio é criar uma pequena lojinha de NFTs onde teremos uma listagem dos NFTs disponíveis para compra e a possibilidade de adicioná-los a uma carteira."_
 
+Mais detalhes [aqui](https://github.com/emilioheinz/technical-test)
+
 ## Funcionalidades
 
 - Vitrine:
 
   - Listagem dos NFT's para compra.
-  - Possibilidade de comprar uma única vez cada um dos NFT's.
+  - Possibilidade de comprar NFT's.
 
 - Carteira:
 
-  - Listagem os NFT's comprados.
+  - Listagem dos NFT's comprados.
   - Resumo com valores em Ether e BRL de todos os NFT's adquiridos.
   - Possibilidade de remover NFT's da carteira.
 

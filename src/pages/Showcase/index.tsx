@@ -10,14 +10,14 @@ export const Showcase: React.FC = () => {
   const { addProduct } = useWallet();
 
   const productsList = useMemo(() => {
-    return data?.map(({ collection, id, image, price, isSold }) => (
+    return data?.map(({ collection, id, image, price, isSold, brlPrice }) => (
       <Card
         key={id.toString()}
         hashCode={id}
         image={image.url}
         price={price}
         name={collection.name}
-        addProduct={() => addProduct({ collection, id, image, price })}
+        addProduct={() => addProduct({ collection, id, image, price, brlPrice })}
         isSold={isSold}
       />
     ));

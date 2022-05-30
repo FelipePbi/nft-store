@@ -15,6 +15,7 @@ export interface IProduct {
   collection: {
     name: string;
   };
+  brlPrice?: number;
   isSold?: boolean;
 }
 

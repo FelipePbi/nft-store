@@ -1,5 +1,6 @@
 import { useContext, useMemo } from 'react';
 
+import { ETHER_PRICE } from '../constants/currency';
 import { IProduct, ProductsContext } from '../contexts/products.context';
 import useWallet from './useWallet.hook';
 
@@ -16,6 +17,7 @@ const useProducts = (): IUseProducts => {
     () =>
       nfts?.map((product) => {
         product.isSold = !!products.some(({ id }) => id === product.id);
+        product.brlPrice = product.price * ETHER_PRICE;
         return product;
       }),
     [nfts, products]

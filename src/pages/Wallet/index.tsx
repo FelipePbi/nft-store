@@ -23,8 +23,13 @@ export const Wallet: React.FC = () => {
 
   const resumeItemList = useMemo(() => {
     return products
-      .map(({ collection, id, price }) => (
-        <ResumeItem key={collection.name} hashCode={id} priceEther={price} priceBRL={price} />
+      .map(({ collection, id, price, brlPrice }) => (
+        <ResumeItem
+          key={collection.name}
+          hashCode={id}
+          priceEther={price}
+          priceBRL={brlPrice || 0}
+        />
       ))
       .concat(
         <ResumeItem key="total_value" priceEther={totalEther} priceBRL={totalBRL} isTotalValue />
