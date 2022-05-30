@@ -1,46 +1,88 @@
-# Getting Started with Create React App
+## Crypto Store
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Aplicação em React com Typescript.
 
-## Available Scripts
+#### Tela Principal (Vitrine)
 
-In the project directory, you can run:
+![showcase](https://github.com/FelipePbi/twitter_hashtag_monitor_front_end/blob/master/screenshots/showcase.PNG)
 
-### `npm start`
+#### Carteira
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![wallet](https://github.com/FelipePbi/twitter_hashtag_monitor_front_end/blob/master/screenshots/wallet.PNG)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Sobre este projeto
 
-### `npm test`
+A ideia do aplicativo é referente a um desafio proposto a mim, com o seguinte contexto:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+_"O objetivo desse desafio é criar uma pequena lojinha de NFTs onde teremos uma listagem dos NFTs disponíveis para compra e a possibilidade de adicioná-los a uma carteira."_
 
-### `npm run build`
+## Funcionalidades
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Vitrine:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  - Listagem dos NFT's para compra.
+  - Possibilidade de comprar uma única vez cada um dos NFT's.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Carteira:
 
-### `npm run eject`
+  - Listagem os NFT's comprados.
+  - Resumo com valores em Ether e BRL de todos os NFT's adquiridos.
+  - Possibilidade de remover NFT's da carteira.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Começando
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Pré-requisitos
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Para executar este projeto no modo de desenvolvimento, você precisará de um ambiente básico para executar um aplicativo React.JS, que pode ser encontrado [aqui](https://reactjs.org/docs/getting-started.html).
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Instalando
 
-## Learn More
+**Clonando o Repositório**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+$ git clone https://github.com/FelipePbi/nft-store
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+$ cd nft-store
+```
+
+**Instalando dependências**
+
+```
+$ yarn
+```
+
+_ou_
+
+```
+$ npm install
+```
+
+### Rodando a aplicação
+
+Com todas as dependências instaladas e o ambiente configurado corretamente, agora você pode executar o aplicativo:
+
+```
+$ yarn start
+```
+
+### Rodando a servidor local
+
+Para conseguir listar os NFT's na vitrine é preciso executar também o `json-server`, para isso basta executar o comando abaixo: 
+
+```
+$ yarn server
+```
+
+## Sobre
+
+Este projeto faz parte do meu portfólio pessoal, portanto, ficarei feliz se você puder me fornecer algum feedback sobre o projeto, código, estrutura ou qualquer coisa que você possa relatar que possa me tornar um desenvolvedor melhor!
+
+Email: felipeborgesdarosa@gmail.com
+
+Conecte-se comigo no [LinkedIn](https://www.linkedin.com/in/felipe-borges-pbi/)
+
+Além disso, você pode usar este projeto como desejar, estudar, fazer melhorias ou ganhar dinheiro com ele!
+
+## Licença
+
+Este projeto está licenciado sob a licença MIT - consulte o arquivo [LICENSE.md](https://github.com/steniowagner/bon-appetit-app/blob/master/LICENSE) para obter detalhes
