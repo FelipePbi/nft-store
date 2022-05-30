@@ -4,7 +4,7 @@ import { formatCurrencyToBRL } from '../../../utils/formatters';
 import { Value, Wrapper } from './styles';
 
 interface IResumeItem {
-  hashCode: string;
+  hashCode?: number;
   priceEther: number;
   priceBRL: number;
   isTotalValue?: boolean;
