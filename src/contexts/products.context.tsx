@@ -24,7 +24,12 @@ export interface IProductsContext {
   isLoading?: boolean;
 }
 
-const ProductsContext = createContext({} as IProductsContext);
+export const INITIAL_STATE = {
+  nfts: [],
+  isLoading: false,
+};
+
+const ProductsContext = createContext(INITIAL_STATE);
 
 const ProductProvider: React.FC<IFunctionalComponentProps> = ({ children }) => {
   const [{ loading: isLoading, value: data }, trigger] = useAsyncFn(() => fetcher(NFT_URL));

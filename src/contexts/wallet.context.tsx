@@ -11,13 +11,15 @@ export interface IWalletContext {
   removeProduct: (productId: number) => void;
 }
 
-const WalletContext = createContext({
+export const INITIAL_STATE = {
   products: [],
   totalEther: 0,
   totalBRL: 0,
   addProduct: () => null,
   removeProduct: () => null,
-} as IWalletContext);
+};
+
+const WalletContext = createContext(INITIAL_STATE as IWalletContext);
 
 const WalletProvider: React.FC<IFunctionalComponentProps> = ({ children }) => {
   const [products, setProducts] = useState<IProduct[]>([]);
