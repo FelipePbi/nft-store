@@ -3,8 +3,8 @@ import { createContext, useEffect, useMemo } from 'react';
 import { useAsyncFn } from 'react-use';
 
 import { NFT_URL } from '../constants/urls';
+import { fetcher } from '../helpers/http';
 import { IFunctionalComponentProps } from '../types/interfaces';
-import { fetcher } from '../utils/http';
 
 export interface IProduct {
   id: number;

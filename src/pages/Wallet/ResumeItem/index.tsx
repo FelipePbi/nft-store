@@ -1,6 +1,6 @@
 import EtherPrice from '../../../components/EtherPrice';
 import HashCode from '../../../components/HashCode';
-import { formatCurrencyToBRL } from '../../../utils/formatters';
+import { formatCurrencyToBRL } from '../../../helpers/formatters';
 import { Value, Wrapper } from './styles';
 
 interface IResumeItem {
