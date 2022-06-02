@@ -11,7 +11,7 @@ describe('EtherPrice', () => {
     expect(screen.queryByAltText('Logo da moeda Ether')).toBeInTheDocument();
   });
 
-  it('should render de value with font-size equal to 24px', () => {
+  it('should render with font-size equal to 24px', () => {
     renderWithEverything(<EtherPrice value={10} fontSize="24px" />);
 
     expect(screen.queryByText('10.00')).toHaveStyle('font-size: 24px;');
